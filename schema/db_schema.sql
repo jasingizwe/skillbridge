@@ -1,0 +1,36 @@
+CREATE TABLE users
+(
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    names VARCHAR(100) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    role VARCHAR(100) NOT NULL DEFAULT "student",
+    status VARCHAR(100) NOT NULL DEFAULT "active",
+    createdAt TIMESTAMP DEFAULT NOW(),
+    updatedAt TIMESTAMP DEFAULT NOW() ON UPDATE CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE courses
+(
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    title VARCHAR(100) NOT NULL,
+    image_url VARCHAR(100) NOT NULL,
+    category VARCHAR(100) NOT NULL ,
+    duration INT,
+    createdAt TIMESTAMP DEFAULT NOW(),
+    updatedAt TIMESTAMP DEFAULT NOW() ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE enrolled_courses
+(
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    student_id INT,
+    course_id INT,
+    is_completed INT,
+    createdAt TIMESTAMP DEFAULT NOW(),
+    updatedAt TIMESTAMP DEFAULT NOW() ON UPDATE CURRENT_TIMESTAMP
+);
+
+
+
