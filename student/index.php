@@ -51,7 +51,8 @@ $current_user= $dbConnection->GetRow("SELECT * FROM users WHERE users.id =
                            
                             <img src="../images/courses/teacher-1.jpeg" alt="Teacher">
                         </div>
-                        <h2 class="course-title"><?php echo $enrolled['title'];?></h2>
+                        <a href="course_details.php?course_id=<?php echo $enrolled['course_id'];?>" class="mt-3"><h2 class="course-title mt-3"><?php echo $enrolled['title'];?></h2></a>
+                        
                         <div class="progress" style="display: none;" role="progressbar"
                             aria-label="Animated striped example" aria-valuenow="10" aria-valuemin="0"
                             aria-valuemax="100">
