@@ -53,6 +53,9 @@ AND student_id=?",["$course_id","$user_id"]);
 
             </div>
         </div>
+        <a class="btn btn-outline-dark btn-sm mt-4" href="../certificate/generate_pdf.php?user_id=<?php echo $user_id. "&course_id=".$course_id; ?>" >Get certificate</a>
+
+        <p class="mt-2"> <strong>NB:</strong> If you generate certificate without completing the course it won't be signed or stamped.</p>
        
       </div>
 

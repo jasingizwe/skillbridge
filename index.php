@@ -239,33 +239,7 @@ $courses = $dbConnection->Getrows("SELECT * FROM courses");
 </section>
 <!--   *** About us Section Ends ***   -->
 
-<!--   *** Certification Section Starts ***   -->
-<section class="certificate" id="categories">
-    <!--   === Certification Section Header Starts ===   -->
-	<header class="section-header">
-		 <h1>Certification</h1>
-		 <p>Get your certificates after completing all the courses.</p>
-	</header>
-	<!--   === About us Section Header Ends ===   --> 
-    <div>
-        <h2>Your Courses</h2>
-        <ul>
-            <li>Course: Development <progress value="100" max="100"></progress>
-                <button onclick="downloadCertificate('courseId')">Download Certificate</button>
-            </li>
-
-            <li>Course: Designing <progress value="100" max="100"></progress>
-                <button onclick="downloadCertificate('courseId')">Download Certificate</button>
-            </li>
-
-            <li>Course: Photography <progress value="100" max="100"></progress>
-                <button onclick="downloadCertificate('courseId')">Download Certificate</button>
-            </li>
-        </ul>
-    </div>
-    
-</section>
-<!--   *** Certification Section Ends ***   -->   
+ 
     
 <!--   *** Footer Section Starts ***   -->
 <?php require_once('partials/_footer.php');?>

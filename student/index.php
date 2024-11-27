@@ -60,7 +60,7 @@ $current_user= $dbConnection->GetRow("SELECT * FROM users WHERE users.id =
                             </div>
                         </div>
                     </div>
-                    <a class="btn btn-outline-dark btn-sm" href="../certificate/generate_pdf.php?user_id=<?php echo $current_user['id']. "&course_id=".$enrolled['course_id'] ?>" >Get certificate</a>
+                    
                 </div>
 
                 <?php }} else{?>
